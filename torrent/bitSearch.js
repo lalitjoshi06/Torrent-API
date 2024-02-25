@@ -4,7 +4,7 @@ const axios = require('axios')
 
 async function bitSearch(query, page = '1') {
     var ALLTORRENT = [];
-    const url = "https://bitsearch.to/search?q=" + query + "&page=" + page + "&sort=seeders";
+    const url = "https://solidtorrents.to/search?q=" + query + "&page=" + page + "&sort=seeders";
     let html;
     try {
         html = await axios.get(url, headers = {
