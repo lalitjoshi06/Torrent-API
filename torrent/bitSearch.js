@@ -18,7 +18,7 @@ async function bitSearch(query, page = '1') {
     const $ = cheerio.load(html.data);
 
 
-    $('li.search-result').each((_, element) => {
+    $('li.search-result.view-box').each((_, element) => {
         let torrent = {
             'Name': $(element).find('.info h5 a').text().trim(),
             'Size': $(element).find('.info div div').eq(2).text().trim(),
