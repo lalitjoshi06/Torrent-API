@@ -21,10 +21,10 @@ async function bitSearch(query, page = '1') {
     $('li.search-result').each((_, element) => {
         let torrent = {
             'Name': $(element).find('.info h5 a').text().trim(),
-            'Size': $(element).find('.info div div').eq(2).text().trim(),
+            'Size': $(element).find('.info div div').eq(3).text().trim(),
             'Downloads': $(element).find('.info div div').eq(1).text().trim(),
-            'Seeders': $(element).find('.info div div').eq(3).text().trim(),
-            'Leechers': $(element).find('.info div div').eq(4).text().trim(),
+            'Seeders': $(element).find('.info div div').eq(4).text().trim(),
+            'Leechers': $(element).find('.info div div').eq(5).text().trim(),
             'DateUploaded': $(element).find('.info div div').eq(5).text().trim(),
             'Url': "https://bitsearch.to" + $(element).find('.info h5 a').attr('href'),
             'TorrentLink': $(element).find('.links a').attr('href'),
