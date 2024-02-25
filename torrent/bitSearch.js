@@ -28,7 +28,7 @@ async function bitSearch(query, page = '1') {
             'DateUploaded': $(element).find('.info div div').eq(5).text().trim(),
             'Url': "https://bitsearch.to" + $(element).find('.info h5 a').attr('href'),
             'TorrentLink': $(element).find('.links a').attr('href'),
-            'Magnet': $(element).find('.links a').next().attr('href'),
+            'Magnet': $(element).find('.links a.dl-magnet').next().attr('href'),
         }
         ALLTORRENT.push(torrent);
     })
