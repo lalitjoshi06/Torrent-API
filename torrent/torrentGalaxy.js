@@ -11,7 +11,7 @@ async function torrentGalaxy(query = '', page = '0') {
         }
     }
     const allTorrents = [];
-    const url = "https://torrentgalaxy.to/torrents.php?search=" + query + "&sort=id&order=desc&page=" + page;
+    const url = "https://tgx.rs/torrents.php?search=" + query + "&sort=id&order=desc&page=" + page;
     let html;
     try{
         html = await axios.get(url);
