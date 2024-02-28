@@ -37,4 +37,4 @@ async function bitSearch(query, page = '1') {
 }
 
 
-module.exports = bitSearch;
+module.exports = bitSearch
