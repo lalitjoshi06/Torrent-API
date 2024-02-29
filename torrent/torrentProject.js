@@ -4,7 +4,7 @@ const axios = require('axios')
 async function torrentProject(query, page = '0') {
     var ALLTORRENT = [];
     var ALLURL = [];
-    const url = `https://torrentproject2.com/?t=${query}&p=${page}&orderby=seeders`;
+    const url = `https://torrentproject2.net/?t=${query}&p=${page}&orderby=seeders`;
     let html;
     try {
         html = await axios.get(url, headers = {
