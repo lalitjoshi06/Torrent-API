@@ -18,7 +18,6 @@ const limeTorrent = require('./torrent/limeTorrent');
 const torrentFunk = require('./torrent/torrentFunk');
 const torrentProject = require('./torrent/torrentProject');
 
-export const runtime = 'edge'; // Add this line
 const app = express();
 
 app.use('/api/:website/:query/:page?', (req, res, next) => {
@@ -365,7 +364,6 @@ app.use('/api/:website/:query/:page?', (req, res, next) => {
     }
 
 });
-
 app.use('/', (req, res) => {
     res.send('<h1>Welcome to 1337x, NyaaSi, YTS, PirateBay, Torlock, EzTvio, TorrentGalaxy, Rarbg, Zooqle, KickAss, Bitsearch, Glodls, MagnetDL, Limetorrent, TorrentFunk, TorrentProject and Ettv Central Unoffical API</h1>');
 });
