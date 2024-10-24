@@ -1,8 +1,0 @@
-[build]
-  functions = "functions" # Adjust this if your function directory is different
-  publish = "functions"      # Set this to your static files directory if you have one
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/${1}"
-  status = 200
