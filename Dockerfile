@@ -16,5 +16,5 @@ COPY . .
 # Expose the port your app runs on
 EXPOSE 3000
 
-# Command to run your application
-CMD ["node", "app.js"]  # Change 'app.js' to your main file if different
+# Use nodemon for development; you can switch to node for production
+CMD ["npx", "nodemon", "app.js"]
