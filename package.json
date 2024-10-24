@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "start-server": "node app.js"
+    "build": "echo 'No build step required'",  // Placeholder for build step
+    "start-server": "node app.js"  // Optional: use this for local server start
   },
   "keywords": [],
   "author": "Ryuk_me",
