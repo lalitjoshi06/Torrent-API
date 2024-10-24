@@ -4,7 +4,7 @@ const axios = require('axios');
 
 async function ezTV(query) {
     let allTorrents = [];
-    const url = 'https://eztv.re/search/' + query;
+    const url = 'https://eztvx.to/search/' + query;
     let html;
     try {
         html = await axios.get(url);
